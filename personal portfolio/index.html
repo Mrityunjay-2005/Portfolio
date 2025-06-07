@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class='bx bx-x' onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Third Year BE/BTech CSE (AIML)</p>
+            <h1>Hi, I'm <span>Mrityunjay Acharya</span></h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="User">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Mrityunjay Acharya. I'm 19 years old and currently pursuing my engineering degree in Artificial Intelligence and Machine Learning (AIML) at Lokmanya Tilak College of Engineering, Navi-Mumbai. My passion for technology and innovation drives me to learn and grow. I'm excited to explore the vast possibilities in AIML and eager to collaborate with like-minded individuals. Let's connect and achieve great things together!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, basics of Java & Python</li>
+                        <li><span>Web Development</span><br>HTML & CSS</li>
+                        <li><span>AI & Machine Learning</span><br>Generative AI, AI Fundamentals</li>
+                        <li><span>Other</span><br>Efficient AI prompting and Teamwork</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Pursuing Third-year engineering</li>
+                        <li><span>2022 - 23</span><br>Completed my 12th Boards</li>
+                        <li><span>2020 - 21</span><br>Completed 10th Boards</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Degree</span><br>Lokmanya Tilak College of Engineering</li>
+                        <li><span>Jr. College</span><br>Smt. Sushiladevi Deshmukh Vidyalay Jr. College</li>
+                        <li><span>School</span><br>St. John the Baptist High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bx-cog'></i>
+                <h2>Coding Languages</h2>
+                <p>Programming and coding services in languages like Python, Java, C++, etc.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class='bx  bx-code-alt'></i> 
+                <h2>Web Devlopment</h2>
+                <p>Design and develop responsive websites using HTML, CSS</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class='bx  bx-crop'  ></i> 
+                <h2>Graphic Design</h2>
+                <p>Creative and visually engaging graphic design for branding, marketing, digital media using Photoshop, Canva, and Figma.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="Work 1">
+                <div class="layer">
+                    <h3>E-commerce Shopping Website</h3>
+                    <p>Developed a responsive eCommerce website with user-friendly UI, product listings, and secure checkout functionality</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Work 2">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>A personal portfolio website showcasing my skills, projects, and contact information as a budding AI & ML engineering student.
+</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Work 3">
+                <div class="layer">
+                    <h3>Dextop Assistant</h3>
+                    <p>A smart desktop assistant built with PyQt5, enabling voice commands, custom GUI interactions, and multi-screen task handling.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1rHNbv6vkFgfic4Y5yzwK-2GV3ZrgF1Vx" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bxs-paper-plane'></i> acharyamrityunjay21@gmail.com</p>
+                <p><i class='bx bxs-phone'></i> +91 7021090672</p>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Mrityunjay-2005"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/mrityunjay-acharya-a570b5280"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.instagram.com/just_mrityunjay"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/qr/ZROZPNMZU7AEK1"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <a href="images/Mrityunjay resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Mrityunjay Acharya. Made with <i class='bx bxs-heart'></i></p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    function opentab(evt, tabname) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        evt.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwrmuzz1ErQETGs47RXZexsQIoKbX-G_UOWjCQjWp2R3_KAlxvTi9YGyiXdGV0SvSj0/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => {
+                msg.innerHTML = "Message failed to send";
+                console.error('Error!', error.message);
+            });
+    });
+</script>
+
+</body>
+</html>
